@@ -10,11 +10,11 @@
 10. At line 12 the function run through `console.log(length)` and prints out `3`. Because `length` was declared with `const` variable at the top of the function and outside of the `for` loop, making it accessiable throughout the entire function. Since `prices.length` is 3 based on the number of items in the prices array, logging `length` would output `3`.
 11. The function will return the discounted array `[50, 100, 150]`. We firstly created an empty `discounted` array and store the number of items in prices array in `length`. Then the `for` loop, using block-scoped `let i` would run from `0` to `length - 1`. Once through each iteration we calculate with `prices[i] * (1 - discount)`, we store the value into `discounted`. And after the iteration through all items in the array, `discounted` will hold `[50, 100, 150]` and being returned. But such array was not being shown since we never call `console.log()` for `discounted`, thus not being display in terminal. But it would return the discounted array as `[50, 100, 150]`.
 12. Notations
-    A. student.name // 'Sarah'
-    B. student['Grad Year'] // '2022'
-    C. student.greeting() // calls the function logs 'Hello!'
-    D. student['Favorite Teacher'].name // 'Thomas Powell'
-    E. student.courseLoad[0] // 'CSE110'
+- A. student.name // 'Sarah'
+- B. student['Grad Year'] // '2022'
+- C. student.greeting() // calls the function logs 'Hello!'
+- D. student['Favorite Teacher'].name // 'Thomas Powell'
+- E. student.courseLoad[0] // 'CSE110'
 13. Arithmetic
     A. '3' + 2 = `'32'` 
     The '+' operator with the string '3' performs string concatenation, so 2 in this operation is treated as string '2' and join with '3' to get the result string of '32'.
