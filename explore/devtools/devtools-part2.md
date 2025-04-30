@@ -1,0 +1,2 @@
+1. The bug was that the inputs of `num1` and `num2` are being treated as strings while they are suppose to be numbers. 
+2. We fix it by convert the input values of `num1` and `num2` to numbers before the function adds them together. Such as in the funtion `calculateSum()` changes `let result = num1 + num2` to `let result = Number(num1) + Number(num2)` in order for the function to return the correct number result.
