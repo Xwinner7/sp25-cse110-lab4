@@ -16,34 +16,34 @@
 - D. student['Favorite Teacher'].name // 'Thomas Powell'
 - E. student.courseLoad[0] // 'CSE110'
 13. Arithmetic
-    A. '3' + 2 = `'32'` 
+- A. '3' + 2 = `'32'` 
     The '+' operator with the string '3' performs string concatenation, so 2 in this operation is treated as string '2' and join with '3' to get the result string of '32'.
-    B. '3' - 2 = `1`
+- B. '3' - 2 = `1`
     The '-' operator would forces numeric conversion as it only works on numbers, so the string '3' is being treated as the number 3 and being subtracted with 2 to get the result of 1.
-    C. 3 + null = `3`
+- C. 3 + null = `3`
     Null in this case is being treated as 0 in numeric contexts, thus 3 plus 0 will result in the number 3.
-    D. '3' + null = `'3null'`
+- D. '3' + null = `'3null'`
     The '+' operator treats null as a string 'null', thus with the operator it concatenated to the string '3' and result in '3null'.
-    E. true + 3 = `4`
+- E. true + 3 = `4`
     True in here is being treated as 1 in numeric contexts, thus 1 plus 3 would result in the number 4.
-    F. false + null = `0`
+- F. false + null = `0`
     False in here is being treated as 0 in numeric contexts while null is also being treated as 0 in numeric contexts. Thus 0 plus 0 will result in 0.
-    G. '3' + undefined = `'3undefined'`
+- G. '3' + undefined = `'3undefined'`
     The '+' operator treats undefined as another string, thus it concatenated the string '3' with 'undefined' to get the result of '3undefined'.
-    H. '3' - undefined = `NaN`
+- H. '3' - undefined = `NaN`
     The '-' operator only works with numbers, thus string '3' is being treated as the number 3, undefined would become NaN since it is not a number. Therefore 3 subtracts NaN would just result in NaN.
 14. Comparison
-    A. '2' > 1 outputs `true`
+- A. '2' > 1 outputs `true`
     The '>' operstor triggers numeric conversion for comparison. The string '2' is being treated as the number 2, thus 2 it is greater than 1, hence the comparsion will be true.
-    B. '2' < '12' outputs `false`
+- B. '2' < '12' outputs `false`
     Since both are strings, the comparsion would be lexicographical, '2' is being compare to string '1' and since the value of '2' is greater than '1', so '2' < '12' would be false.
-    C. 2 == '2' outputs `true`
+- C. 2 == '2' outputs `true`
     The loose equality operator treats '2' as the number 2, therefore 2 == 2 would be true as the number 2 is indeed equal to the number 2.
-    D. 2 === '2' outputs `false`
+- D. 2 === '2' outputs `false`
     The strict equality operator checks both value and type that is being compared, and in this case one is a number with the other being a string. So it would return false as the number 2 and the string '2' are not the same type.
-    E. true == 2 outputs `false`
+- E. true == 2 outputs `false`
     True in this case is treated as the number 1 with the '==' loose equality operator, and 1 does not equal to 2, so it returns false.
-    F. true === Boolean(2) outputs `true`
+- F. true === Boolean(2) outputs `true`
     The Boolean(2) converts the number 2 to be true as any non-zero number is true. Thus the strict equality between the two booleans would be true as both sides are the same type.
 15. The '==' loose equality compared two values for equality after applying type convertion when they are different types. Such as the comparsion 2 == '2' is true because the string '2' is converted to the number 2 before comparison. While the '===' strict equality checks both the value and type independently without convertion. Therefore, even though they would compare equally under '==' operator, 2 === '2' is false since one is a number and the other is a string.
 16. In JS file `part2-question16.js`
